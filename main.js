@@ -16,7 +16,7 @@ fetch('https://6560acc483aba11d99d151a5.mockapi.io/api/movies')
           <p>${movie.starring}</p>
         </div>
         <div class="card-action">
-          <a href=${movie.trailler} target="_blank">Watch
+          <a href=${movie.trailer} target="_blank">Watch</a>
         </div>
       </div>
     </div>
