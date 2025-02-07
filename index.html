@@ -7,28 +7,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
-        .container{
+        /* Base grid layout */
+        .container {
             width: 100%;
             height: auto;
-            display: grid; 
-            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        /* Responsive grid for medium screens (tablets) */
+        @media only screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Responsive grid for small screens (phones) */
+        @media only screen and (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
-    <!-- nav satart -->
+    <!-- nav start -->
     <nav>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">Movi</a>
         </div>
     </nav>
     <!-- nav end -->
-    <div class="container"></div>
-    <!-- footer start -->
 
+    <!-- Main container for content (using grid layout) -->
+    <div class="container">
+      
+    </div>
+
+    <!-- footer start -->
     <footer class="page-footer">
-       
         <div class="footer-copyright">
             <div class="container">
                 © 2025 Copyright Text
@@ -37,6 +56,7 @@
         </div>
     </footer>
     <!-- footer end -->
+
     <script src="main.js"></script>
 </body>
 
